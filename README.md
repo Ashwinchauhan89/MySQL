@@ -90,7 +90,7 @@ The DBMS acts as a bridge between the user and the database. Users do not intera
 
 <hr>
 
-#Types Of Databases Mainly
+# Types Of Databases Mainly
 
 ## 1. Relational Database (RDBMS)
 
