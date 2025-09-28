@@ -86,6 +86,11 @@ The DBMS acts as a bridge between the user and the database. Users do not intera
 - **User**: Any person or application that needs to access or manipulate data.
 - **DBMS**: Software that processes user requests (e.g., SQL queries) and communicates with the database.
 - **Database**: The actual storage of data, structured in tables, documents, etc.
+- 
+
+<hr>
+
+#Types Of Databases Mainly
 
 ## 1. Relational Database (RDBMS)
 
