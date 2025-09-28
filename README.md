@@ -87,4 +87,20 @@ The DBMS acts as a bridge between the user and the database. Users do not intera
 - **DBMS**: Software that processes user requests (e.g., SQL queries) and communicates with the database.
 - **Database**: The actual storage of data, structured in tables, documents, etc.
 
+## 1. Relational Database (RDBMS)
 
+- **Description**: Stores data in tables (rows and columns) with predefined schemas.
+- **Example Systems**: MySQL, PostgreSQL, Oracle, Microsoft SQL Server
+- **Use Cases**: Banking systems, e-commerce, ERP, CRM
+
+---
+
+## 2. NoSQL Database (Non - Relational)
+
+- **Description**: Designed for unstructured, semi-structured, or rapidly changing data. Does not use traditional table-based schema.
+- **Types**:
+  - **Document-based**: e.g., MongoDB
+  - **Key-value stores**: e.g., Redis
+  - **Column-family stores**: e.g., Cassandra
+  - **Graph databases**: e.g., Neo4j
+- **Use Cases**: Real-time analytics, social networks, IoT, big data applications
