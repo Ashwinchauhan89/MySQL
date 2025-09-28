@@ -469,6 +469,38 @@ This project uses several types of keys to ensure data integrity and establish r
 - **Composite Key:**  
   A primary key consisting of two or more columns that together uniquely identify a record.
 
+# Constraints in SQL
+
+Constraints are rules applied to table columns to ensure the accuracy and reliability of the data in the database. Common SQL constraints include:
+
+## NOT NULL
+Ensures that a column cannot have NULL values.
+
+## UNIQUE
+Ensures all values in a column are distinct across the table.
+
+## PRIMARY KEY
+Uniquely identifies each row in a table. It combines NOT NULL and UNIQUE constraints.
+
+## FOREIGN KEY
+Ensures the value in one table matches a value in another table’s primary key column, maintaining referential integrity.
+
+## CHECK
+Ensures that values in a column satisfy a specific condition.
+
+## DEFAULT
+Sets a default value for a column when no value is specified during insertion.
+
+```markdown
+CREATE TABLE employees (
+  employee_id INT PRIMARY KEY,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  age INT CHECK (age >= 18),
+  department_id INT,
+  hire_date DATE DEFAULT CURRENT_DATE,
+  FOREIGN KEY (department_id) REFERENCES departments(department_id)
+);
+```
 
 
 
