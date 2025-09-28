@@ -59,4 +59,32 @@ A **Database Management System (DBMS)** is software that allows users to define,
 - Provides centralized data management
 - Ensures data integrity and consistency
 
+# Relationship Between User, DBMS, and Database
+
+The DBMS acts as a bridge between the user and the database. Users do not interact with the database directly — they interact with the DBMS, which manages all data access and operations.
+
+## Diagram:
+
+        +--------+       
+        |  User  |       
+        +--------+       
+             |            
+             | interacts with
+             v            
+        +-----------+     
+        |   DBMS    | <------ Software layer
+        +-----------+     
+             |            
+             | accesses / manages
+             v            
+        +------------+    
+        |  Database  | <--- Stores actual data
+        +------------+    
+
+## Description:
+
+- **User**: Any person or application that needs to access or manipulate data.
+- **DBMS**: Software that processes user requests (e.g., SQL queries) and communicates with the database.
+- **Database**: The actual storage of data, structured in tables, documents, etc.
+
 
