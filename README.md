@@ -441,3 +441,35 @@ Then , Enter the SQL Commands
 ![alt text](images/08.png)
 
 
+# SQL Project Name
+
+## Introduction
+
+This project contains a collection of SQL scripts designed to manage and interact with a relational database. It includes scripts for creating database schemas, inserting sample data, and performing common queries to retrieve and analyze information. The purpose of this project is to provide a clear and reusable set of SQL commands that can be used for learning, development, or as a starting point for building more complex database applications.
+
+Whether you are a beginner looking to understand SQL basics or an experienced developer needing ready-to-use scripts, this project offers a practical and well-organized resource.
+
+## Keys in SQL
+
+This project uses several types of keys to ensure data integrity and establish relationships between tables:
+
+- **Primary Key (PK):**  
+  *A unique identifier for each record in a table.
+  
+  *It cannot be null and ensures each row is uniquely identifiable.
+
+- **Foreign Key (FK):**  
+  *A field (or collection of fields) in one table that refers to the primary key in another table.
+  
+  *It enforces referential integrity between the two tables.
+
+- **Unique Key:**  
+  Ensures that all values in a column are distinct across the table, but unlike primary keys, it can accept null values depending on the database.
+
+- **Composite Key:**  
+  A primary key consisting of two or more columns that together uniquely identify a record.
+
+
+
+
+
