@@ -1,6 +1,8 @@
 # Database
 
-A **database** is an organized collection of data that is stored and accessed electronically. Databases are designed to efficiently store, manage, and retrieve large amounts of information. They are commonly used in various applications, from websites and business systems to scientific research and mobile apps.
+A **database** is an organized collection of data that is stored and accessed electronically. 
+Databases are designed to efficiently store, manage, and retrieve large amounts of information. 
+They are commonly used in various applications, from websites and business systems to scientific research and mobile apps.
 
 ## Key Characteristics
 
