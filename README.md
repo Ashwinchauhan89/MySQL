@@ -10,6 +10,7 @@ They are commonly used in various applications, from websites and business syste
 - **Efficient Access**: Databases support quick search, insert, update, and delete operations.
 - **Data Integrity**: Rules and constraints ensure accuracy and consistency of data.
 - **Security**: Access controls protect data from unauthorized access or modification.
+  
 
 ## Types of Databases
 
