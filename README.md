@@ -114,7 +114,7 @@ The DBMS acts as a bridge between the user and the database. Users do not intera
 - **Use Cases**: Real-time analytics, social networks, IoT, big data applications
 
 
-
+<hr>
 # SQL 
 
 ## Introduction
