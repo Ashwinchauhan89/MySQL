@@ -19,3 +19,24 @@ INSERT INTO client_master (clientno, name, address, city, pincode, state, bal_du
 
 
 
+-- This Is Also Right
+
+-- INSERT INTO client VALUES
+-- ('C00001', 'Rahul Sharma', '12 MG Road', 'Mumbai', 400001, 'Maharashtra', 1500.50);
+
+-- INSERT INTO client VALUES
+-- ('C00002', 'Priya Verma', '22 Park Street', 'Kolkata', 700016, 'West Bengal', 250.00);
+
+-- INSERT INTO client VALUES
+-- ('C00003', 'Amit Patel', '5 Ring Road', 'Ahmedabad', 380001, 'Gujarat', 980.75);
+
+-- INSERT INTO client VALUES
+-- ('C00004', 'Sneha Kapoor', '44 Civil Lines', 'Delhi', 110001, 'Delhi', 0.00);
+
+-- INSERT INTO client VALUES
+-- ('C00005', 'Rohan Singh', '88 JP Nagar', 'Bengaluru', 560076, 'Karnataka', 320.40);
+
+-- INSERT INTO client VALUES
+-- ('C00006', 'Kavita Jain', '9 MI Road', 'Jaipur', 302001, 'Rajasthan', 120.00);
+
+

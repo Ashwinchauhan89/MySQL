@@ -1,0 +1,30 @@
+CREATE TABLE product_master (
+    product_no      VARCHAR2(6) PRIMARY KEY,
+    description     VARCHAR2(15) NOT NULL,
+    profit_percent  NUMBER(4,2)  NOT NULL,
+    unit_measure    VARCHAR2(10) NOT NULL,
+    qty_on_hand     NUMBER(8)    NOT NULL,
+    reorder_lvl     NUMBER(8)    NOT NULL,
+    sell_price      NUMBER(8,2)  NOT NULL CHECK (sell_price <> 0),
+    cost_price      NUMBER(8,2)  NOT NULL CHECK (cost_price <> 0),
+
+
+);
+
+INSERT INTO product_master 
+(product_no, description, profit_percent, unit_measure, qty_on_hand, reorder_lvl, sell_price, cost_price)
+VALUES
+('P7890',  'printer',  5.00, 'product', 60, 40, 340.00, 320.00),
+('PS123', 'mouse',     8.00, 'piece',   50, 30, 400.00, 375.00),
+('PR345', 'speaker',   8.00, 'product', 30, 20, 320.00, 280.00),
+('PT567', 'mouse',     8.00, 'piece',   50, 30, 400.00, 375.00),
+('PA433', 'keyboard',  6.00, 'product', 40, 20, 350.00, 290.00),
+('PS567', 'CPU',       7.00, 'product', 50, 40, 450.00, 430.00);
+
+
+--Aap column list na likho tab bhi INSERT work karega — BUT ONLY IF you supply values in the exact same order as the table structure.
+
+--like
+
+--INSERT INTO product_master
+--VALUES ('P7890', 'printer', 5.00, 'product', 60, 40, 340.00, 320.00);
