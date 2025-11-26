@@ -1,6 +1,8 @@
 # Database
 
-A **database** is an organized collection of data that is stored and accessed electronically. Databases are designed to efficiently store, manage, and retrieve large amounts of information. They are commonly used in various applications, from websites and business systems to scientific research and mobile apps.
+A **database** is an organized collection of data that is stored and accessed electronically. 
+Databases are designed to efficiently store, manage, and retrieve large amounts of information. 
+They are commonly used in various applications, from websites and business systems to scientific research and mobile apps.
 
 ## Key Characteristics
 
@@ -8,6 +10,7 @@ A **database** is an organized collection of data that is stored and accessed el
 - **Efficient Access**: Databases support quick search, insert, update, and delete operations.
 - **Data Integrity**: Rules and constraints ensure accuracy and consistency of data.
 - **Security**: Access controls protect data from unauthorized access or modification.
+  
 
 ## Types of Databases
 
@@ -111,7 +114,7 @@ The DBMS acts as a bridge between the user and the database. Users do not intera
 - **Use Cases**: Real-time analytics, social networks, IoT, big data applications
 
 
-
+<hr>
 # SQL 
 
 ## Introduction
