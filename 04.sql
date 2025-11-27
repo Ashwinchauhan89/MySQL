@@ -1,15 +1,15 @@
+
 CREATE TABLE product_master (
-    product_no      VARCHAR2(6) PRIMARY KEY,
-    description     VARCHAR2(15) NOT NULL,
-    profit_percent  NUMBER(4,2)  NOT NULL,
-    unit_measure    VARCHAR2(10) NOT NULL,
-    qty_on_hand     NUMBER(8)    NOT NULL,
-    reorder_lvl     NUMBER(8)    NOT NULL,
-    sell_price      NUMBER(8,2)  NOT NULL CHECK (sell_price <> 0),
-    cost_price      NUMBER(8,2)  NOT NULL CHECK (cost_price <> 0),
-
-
+    product_no    VARCHAR(6) PRIMARY KEY,
+    description   VARCHAR(15) NOT NULL,
+    profit_percent DECIMAL(4,2) NOT NULL,
+    unit_measure  VARCHAR(10) NOT NULL,
+    qty_on_hand   INT NOT NULL,
+    reorder_lvl   INT NOT NULL,
+    sell_price    DECIMAL(8,2) NOT NULL,
+    cost_price    DECIMAL(8,2) NOT NULL
 );
+
 
 INSERT INTO product_master 
 (product_no, description, profit_percent, unit_measure, qty_on_hand, reorder_lvl, sell_price, cost_price)

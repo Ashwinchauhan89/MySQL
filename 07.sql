@@ -1,11 +1,14 @@
 CREATE TABLE order_detail (
-    order_no      VARCHAR2(6) PRIMARY KEY,
-    product_no    VARCHAR2(6),
-    qty_ordered   NUMBER(8),
-    qty_disp      NUMBER(8),
-    product_rate  NUMBER(10,2),
+
+    order_no      VARCHAR(6) PRIMARY KEY,
+    product_no    VARCHAR(6),
+    qty_ordered   INT,
+    qty_disp      INT,
+    product_rate  DECIMAL(10,2),
 
     FOREIGN KEY (product_no) REFERENCES product_master(product_no)
+);
+
 
 
 
@@ -19,7 +22,7 @@ CREATE TABLE order_detail (
 
 -- This is correct SQL and completely valid.
 -- You do NOT need to write constraint name unless your teacher specifically asks for it.
-);
+
 
 
 INSERT INTO order_detail VALUES

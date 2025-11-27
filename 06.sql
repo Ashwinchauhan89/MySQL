@@ -1,22 +1,18 @@
 CREATE TABLE sales_order (
-    order_no     VARCHAR2(6) PRIMARY KEY,
-    order_date   DATE,
-    client_no    VARCHAR2(6),
-    dely_addr    VARCHAR2(25),
-    salesman_no  VARCHAR2(6),
-    dely_type    CHAR(1),
-    billed_yn    CHAR(1),
-    dely_date    DATE,
-    order_status VARCHAR2(10),
+    order_no      VARCHAR(6) PRIMARY KEY,
+    order_date    DATE,
+    client_no     VARCHAR(6),
+    dely_addr     VARCHAR(25),
+    salesman_no   VARCHAR(6),
+    dely_type     CHAR(1),
+    billed_yn     CHAR(1),
+    dely_date     DATE,
+    order_status  VARCHAR(10),
 
-    -- FK → client_master(client_no)
-    FOREIGN KEY (client_no)
-        REFERENCES client_master(client_no),
-
-    -- FK → salesman_master(salesman_no)
-    FOREIGN KEY (salesman_no)
-        REFERENCES salesman_master(salesman_no)
+    FOREIGN KEY (client_no) REFERENCES client_master(client_no),
+    FOREIGN KEY (salesman_no) REFERENCES salesman_master(salesman_no)
 );
+
 
 -- 1. Client C00003 – Salesman S00003 – Cancelled
 INSERT INTO sales_order VALUES
