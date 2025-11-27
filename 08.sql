@@ -1,5 +1,13 @@
 -- 1. Find the names of salesman who have a salary equal to 15000
 
+-- Write down appropriate SQL statements on retrieving records from a table.
+--  1. Find the names of salesman who have a salary equal to 15000.
+--  2. List all clients who are located in Mumbai.
+
+-- OBJECTIVE:
+--  1. To understand the designing concept of DB schema
+--  2. Use of constraint null ability. 
+
 -- Table: salesman_master
 -- Column: sal_amt
 
