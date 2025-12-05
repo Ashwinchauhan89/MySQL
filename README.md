@@ -504,6 +504,159 @@ CREATE TABLE employees (
   FOREIGN KEY (department_id) REFERENCES departments(department_id)
 );
 ```
+Here are SQL Operators explained clearly and simply — perfect for exam preparation.
+
+
+---
+
+### ✅ SQL Operators
+
+- SQL operators are special symbols used in SQL statements to perform comparisons, arithmetic operations, logical decisions, and pattern matching.
+
+- Below is the complete list.
+
+
+---
+
+## 🔹 1. Arithmetic Operators
+
+- Used for mathematical calculations.
+
+Operator	Meaning
+
++	Addition
+-	Subtraction
+*	Multiplication
+/	Division
+%	Modulus (remainder)
+
+
+Example:
+
+SELECT 10 + 5 AS Result;    -- 15
+
+
+---
+
+## 🔹 2. Comparison (Relational) Operators
+
+Used to compare values.
+
+Operator	Meaning
+
+=	Equal to
+<> or !=	Not equal
+>	Greater than
+<	Less than
+>=	Greater than or equal
+<=	Less than or equal
+
+
+Example:
+
+SELECT * FROM Students WHERE Age >= 18;
+
+
+---
+
+## 🔹 3. Logical Operators
+
+Used to combine multiple conditions.
+
+Operator	Meaning
+
+AND	Both conditions must be true
+OR	Any one condition is true
+NOT	Reverses condition
+
+
+Example:
+
+SELECT * FROM Students
+WHERE Age > 18 AND City = 'Delhi';
+
+
+---
+
+## 🔹 4. Range & Match Operators
+
+A. BETWEEN
+
+Checks if value lies in a range.
+
+SELECT * FROM Products
+WHERE Price BETWEEN 100 AND 500;
+
+
+---
+
+B. IN
+
+Checks if value matches any in a list.
+
+SELECT * FROM Students
+WHERE City IN ('Delhi', 'Mumbai', 'Pune');
+
+
+---
+
+C. LIKE
+
+Pattern matching using wildcards.
+
+Symbol	Meaning
+
+%	Any number of characters
+_	Exactly one character
+
+
+Examples:
+
+SELECT * FROM Employee WHERE Name LIKE 'A%';   -- starts with A
+SELECT * FROM Employee WHERE Name LIKE '%a';   -- ends with a
+SELECT * FROM Employee WHERE Name LIKE '_a%';  -- 2nd letter is 'a'
+
+
+---
+
+D. IS NULL / IS NOT NULL
+
+Check NULL values.
+
+SELECT * FROM Orders WHERE DeliveryDate IS NULL;
+
+
+---
+
+## 🔹 5. Assignment Operator
+
+Used to assign value.
+
+Operator	Meaning
+
+=	Assign/value check
+
+
+
+---
+
+## 🔹 6. Set Operators
+
+Combineeresults of multiple SELECT queries.
+
+Operator	Meaning
+
+UNION	Combine without duplicates
+UNION ALL	Combine with duplicates
+INTERSECT	Common rows from both queries
+EXCEPT / MINUS	Rows from first not in second
+
+
+Example:
+
+SELECT City FROM Customers
+UNION
+SELECT City FROM Suppliers;
 
 
 
